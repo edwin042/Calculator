@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Calculator</title>
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="calcStyle.css">
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="jQuery.js"></script>
+</head>
+<body>
+	<!-- Menu items when clicked hamburger icon will be displayed -->
+	<div id="menuItems">
+		<ul>
+			<li id="standard">Standard</li>
+			<li id="scientific">Scientific</li>
+			<li id="programmer">Programmer</li>
+			<li id="dataCalc">Data Calculation</li>
+		</ul>
+		<div id="aboutThis">About</div>
+	</div>
+	<!-- This is the calculator design-->
+	<section>
+		<!-- This is the hamburger icon made by using CSS -->
+		<div id="menuDiv">
+			<div class="menu"></div>
+			<div class="menu"></div>
+			<div class="menu"></div>
+		</div>
+		<p>
+			Standard
+		</p>
+		<div id="showResult"></div>
+		<input type="text" id="textBox" value="0">
+		<div class="column">
+			<div class="row">
+				<button>CE</button>
+				<button>C</button>
+				<button id="delete">&larr;</button><!--delete button-->
+				<button id="divide" value="/">/</button>
+			</div>
+			<div class="row">
+				<button id="sev" class="numbers" value="7">7</button>
+				<button id="eig" class="numbers" value="8">8</button>
+				<button id="nin" class="numbers" value="9">9</button>
+				<button id="multiply" value="*">*</button>
+			</div>
+			<div class="row">
+				<button id="fou" class="numbers" value="4">4</button>
+				<button id="fiv" class="numbers" value="5">5</button>
+				<button id="six" class="numbers" value="6">6</button>
+				<button id="minus" value="-">-</button>
+			</div>
+			<div class="row">
+				<button id="one" class="numbers" value="1">1</button>
+				<button id="two" class="numbers" value="2">2</button>
+				<button id="thr" class="numbers" value="3">3</button>
+				<button id="plus" value="+">+</button>
+			</div>
+			<div class="row">
+				<button id="del">|</button>
+				<button id="zero" class="numbers" value="">0</button>
+				<button id="und">.</button>
+				<button id="equ" class="colorOrange" id="equals">=</button>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
